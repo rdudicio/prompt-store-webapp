@@ -1,0 +1,1 @@
+I would like us to build a full-stack app called Promptstore - A simple CRUD application that creates, filters, and stores my coding prompts that I can use in the future.
