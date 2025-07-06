@@ -61,7 +61,7 @@ const PromptForm = ({ onSubmit, initialData = {} }) => {
                     </Button>
                 </Box>
                 <Button type="submit" variant="contained" color="primary">
-                    Submit
+                    {initialData.title ? 'Update' : 'Submit'}
                 </Button>
             </Box>
         </form>

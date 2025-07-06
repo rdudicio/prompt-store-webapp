@@ -4,8 +4,12 @@ const apiClient = axios.create({
     baseURL: 'http://localhost:8100/api',
 });
 
-export const getPrompts = (q = '', tags = '') => {
-    return apiClient.get('/prompts', { params: { q, tags } });
+export const getPrompts = (q = '', tags = []) => {
+    const params = { q };
+    if (tags && tags.length > 0) {
+        params.tags = tags.join(',');
+    }
+    return apiClient.get('/prompts', { params });
 };
 
 export const getPrompt = (id) => {

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Container, Typography, Box, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import FilterBar from '../components/FilterBar';
 import PromptList from '../components/PromptList';
 import { getPrompts } from '../services/api';

@@ -62,3 +62,21 @@ This is a full-stack CRUD application for managing coding prompts.
     npm start
     ```
     The frontend will typically open in your browser at `http://localhost:3000`.
+
+## Running Tests
+
+### Running Backend Tests
+
+1.  Ensure you are in the `backend` directory and your virtual environment is activated.
+2.  Run the tests using `pytest`:
+    ```bash
+    pytest
+    ```
+
+### Running Frontend Tests
+
+1.  Ensure you are in the `frontend` directory.
+2.  Run the tests using `npm test`:
+    ```bash
+    npm test
+    ```

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import PromptForm from '../components/PromptForm';
 import { createPrompt } from '../services/api';
 

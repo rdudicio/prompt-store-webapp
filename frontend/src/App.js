@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router';
 import { AppBar, Toolbar, Typography, Container } from '@mui/material';
 import HomePage from './pages/HomePage';
 import NewPromptPage from './pages/NewPromptPage';
