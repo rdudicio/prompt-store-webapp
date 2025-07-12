@@ -19,7 +19,7 @@ You are an expert project planner specializing in creating incremental plans and
     *   For each section, define clear **Objectives**.
 
 4.  **Task Definition (Objective-Test-Code):**
-    *   For every objective, define concrete tasks following this structure:
+    *   For every objective, define concrete tasks following a sequenced numbering (e.g., `1.0`, `1.1`, `1.2` for sub-tasks) and include a completion checkbox (`[ ]` for incomplete, `[x]` for complete).
         *   **Objective:** A concise statement of what needs to be achieved.
         *   **Tests:** List specific test files or test cases that will verify the objective's successful implementation. Emphasize writing *failing* tests first.
         *   **Code:** List the main files or code sections that will be created or modified to achieve the objective and pass the tests.
@@ -59,10 +59,10 @@ This plan emphasizes a {{Development Approach, e.g., Test-Driven Development (TD
 
 ### A. Project Setup
 
-1.  **Objective:** Initialize {{Backend Technology}} project with {{Language/Framework}} and configure for {{Deployment/DB, e.g., Wrangler/SQLite}}.
-    *   **Tests:**
+1.0 [ ] **Objective:** Initialize {{Backend Technology}} project with {{Language/Framework}} and configure for {{Deployment/DB, e.g., Wrangler/SQLite}}.
+    *   1.1 [ ] **Tests:**
         *   `test_backend_setup.test.{{ext}}`: Verify basic backend app runs and returns a simple response.
-    *   **Code:**
+    *   1.2 [ ] **Code:**
         *   `backend/package.json` (or equivalent): Dependencies.
         *   `backend/tsconfig.json` (or equivalent): Configuration.
         *   `backend/src/index.{{ext}}` (or equivalent): Basic app setup.
@@ -71,8 +71,8 @@ This plan emphasizes a {{Development Approach, e.g., Test-Driven Development (TD
 
 ## III. General Development Workflow:
 
-1.  **Write a failing test:** Create a new test file or add a new test case to an existing file that describes a small piece of functionality. Run the tests and ensure it fails (red phase).
-2.  **Write minimal code:** Implement just enough code to make the failing test pass. Do not add any extra functionality (green phase).
-3.  **Refactor:** Improve the code's design, readability, and maintainability without changing its external behavior. Run tests again to ensure nothing broke.
-4.  **Repeat:** Move to the next small piece of functionality and repeat the cycle.
+1.0 [ ] **Write a failing test:** Create a new test file or add a new test case to an existing file that describes a small piece of functionality. Run the tests and ensure it fails (red phase).
+2.0 [ ] **Write minimal code:** Implement just enough code to make the failing test pass. Do not add any extra functionality (green phase).
+3.0 [ ] **Refactor:** Improve the code's design, readability, and maintainability without changing its external behavior. Run tests again to ensure nothing broke.
+4.0 [ ] **Repeat:** Move to the next small piece of functionality and repeat the cycle.
 ```
